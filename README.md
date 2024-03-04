@@ -1,3 +1,49 @@
+## Debouncing
+
+typing slow = 200ms typing fast = 30ms
+
+Performance
+
+iphone pro max = 14 letter _ 1000 users = 14000
+with debouncing = 3 API calls _ 1000 users = 3000
+
+# Debouncing with 200ms
+
+If difference between 2 key strokes is < 200ms = Decline API Call
+If > 200ms make an API Call.
+
+# Deboucing example
+
+first time pressed key - i
+
+render the component
+
+useEffect()
+
+Start timer => make api call after 200ms
+
+second time pressed key p - ip
+
+destory the component (Call useEffect return method)
+
+re-render Component
+
+useEffect()
+
+Start timer => make api call after 200ms
+
+After setTimeout(200) => make an api call
+
+# In Reducers function
+
+Most importantly, you need to ensure that you either mutate the state argument or return a new state, but not both.
+console.log("state====>", current(state)) // Useful for logging the state Object
+
+# Cache
+
+Time complexcity to search in Array = o(n)
+Time complexcity to search in Object/Map = o(1)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
