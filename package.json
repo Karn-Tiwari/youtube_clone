@@ -2,7 +2,7 @@
   "name": "youtubewala",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Karn-Tiwari.github.io/youtube_clone",
+"homepage": "https://karn-tiwari.github.io/youtube_clone",
 
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
